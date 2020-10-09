@@ -4,4 +4,6 @@ type Mutation {
     authorize(email: String!, password: String! otp: String!, fingerprint: String!): Authoraze!
 
     register(email: String!, password: String!, otpSecret: String!, fingerprint: String!): User!
+
+    addComment(postId: ID!, message: String!): Comment!
 }
