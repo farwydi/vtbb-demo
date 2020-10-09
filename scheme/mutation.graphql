@@ -6,4 +6,6 @@ type Mutation {
     register(email: String!, password: String!, otpSecret: String!, fingerprint: String!): User!
 
     addComment(postId: ID!, message: String!): Comment!
+
+    traking(m:Metric): Int!
 }
