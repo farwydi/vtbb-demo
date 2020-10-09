@@ -1,0 +1,25 @@
+schema:
+  - scheme/*.graphql
+
+exec:
+  filename: pkg/graphql/exec.go
+  package: graphql
+
+model:
+  filename: pkg/graphql/model.go
+  package: graphql
+
+resolver:
+  layout: follow-schema
+  dir: pkg/graphql
+  package: graphql
+
+omit_slice_element_pointers: false
+
+models:
+  UUID:
+    model: github.com/google/uuid.UUID
+  ID:
+    model: github.com/google/uuid.UUID
+  User:
+    model: github.com/farwydi/vtbb-demo/domain.User

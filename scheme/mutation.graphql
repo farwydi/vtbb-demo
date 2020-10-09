@@ -1,0 +1,7 @@
+type Mutation {
+    refreshToken(refreshToken: String!, fingerprint: String!): Accses!
+
+    authorize(email: String!, password: String! otp: String!, fingerprint: String!): Authoraze!
+
+    register(email: String!, password: String!, otpSecret: String!, fingerprint: String!): User!
+}

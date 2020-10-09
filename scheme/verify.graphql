@@ -1,0 +1,9 @@
+type Accses {
+    refreshToken: String!
+    accsesToken: String!
+}
+
+type Authoraze {
+    accses: Accses!
+    user: User!
+}
